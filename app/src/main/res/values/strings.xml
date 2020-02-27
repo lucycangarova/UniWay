@@ -4,4 +4,6 @@
     <string name="sign_up_button">Sign Up</string>
     <string name="log_in_button">Log In</string>
     <string name="guest_button">Continue as Guest</string>
+    <string name="username_label">~username~</string>
+    <string name="universal_lable">Universal Label</string>
 </resources>
