@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">UniWay</string>
+    <string name="logo">UniWay Logo</string>
+    <string name="sign_up_button">Sign Up</string>
+    <string name="log_in_button">Log In</string>
+    <string name="guest_button">Continue as Guest</string>
 </resources>
