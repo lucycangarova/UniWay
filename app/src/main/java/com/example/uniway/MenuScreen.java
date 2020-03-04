@@ -26,6 +26,9 @@ public class MenuScreen extends AppCompatActivity {
             R.drawable.friend_icon,R.drawable.group_icon,
             R.drawable.profile_icon, R.drawable.settings_icon};
 
+    Class[] classes = new Class[]{MainActivity.class, MainActivity.class, MainActivity.class,
+            MainActivity.class, ProfileScreen.class, MainActivity.class};
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,15 +45,8 @@ public class MenuScreen extends AppCompatActivity {
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //The position where the list item is clicked is obtained from the
-                //the parameter position of the android listview
-                int itemPosition = position;
-
-                //Get the String value of the item where the user clicked
-                String itemValue = (String) mListView.getItemAtPosition(position);
-
                 //In order to start displaying new activity we need an intent
-                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), classes[position]);
 
                 //Here we will pass the previously created intent as parameter
                 startActivity(intent);
