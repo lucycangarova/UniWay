@@ -12,50 +12,35 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MenuScreen extends AppCompatActivity {
+public class SettingsScreen extends AppCompatActivity {
 
     //Defining android ListView
     ListView mListView;
 
     //Elements that will be displayed in android ListView
-    String[] menuOptions = new String[]{"Challenges", "Tour Mode", "Friends",
-            "Groups", "Profile", "Settings"};
+    String[] menuOptions = new String[]{"Edit Profile", "Privacy", "Feedback",
+            "Help", "About", "Legal and Policies"};
 
     //Ids of flag Images that are placed in res> drawable folder. They return the int value
-    final int[] images = new int[]{R.drawable.challenges_icon, R.drawable.tour_icon,
-            R.drawable.friend_icon,R.drawable.group_icon,
-            R.drawable.profile_icon, R.drawable.settings_icon};
-
-    Class[] classes = new Class[]{MainActivity.class, MainActivity.class, MainActivity.class,
-            GroupScreen.class, ProfileScreen.class, SettingsScreen.class};
+    final int[] images = new int[]{R.drawable.edit_profile_icon, R.drawable.privacy_icon,
+            R.drawable.feedback_icon,R.drawable.help_icon,
+            R.drawable.about_icon, R.drawable.policies_icon};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_screen);
+        setContentView(R.layout.activity_settings_screen);
 
-        mListView = (ListView) findViewById(R.id.menu_list_view);
+        mListView = (ListView) findViewById(R.id.settings_list_view);
 
         //Declaring Array adapter
-        CustomAdapter customAdapter = new CustomAdapter();
+        SettingsScreen.CustomAdapter customAdapter = new SettingsScreen.CustomAdapter();
         //Setting the android ListView's adapter to the newly created adapter
         mListView.setAdapter(customAdapter);
 
-
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //In order to start displaying new activity we need an intent
-                Intent intent = new Intent(getApplicationContext(), classes[position]);
-
-                //Here we will pass the previously created intent as parameter
-                startActivity(intent);
-
-            }
-        });
     }
 
-    class CustomAdapter extends BaseAdapter{
+    class CustomAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {
