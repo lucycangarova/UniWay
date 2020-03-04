@@ -6,4 +6,14 @@
     <string name="guest_button">Continue as Guest</string>
     <string name="username_label">~username~</string>
     <string name="universal_lable">Universal Label</string>
+    <string name="profile_label">Profile</string>
+    <string name="profile_description">Name: PhD student Maria, studying Mobile HCI at the University
+        of Glasgow. She loves a good evening at the pub with a glass of wine.</string>
+    <string name="profile_image_description">Profile image</string>
+    <string name="points_button">Points:</string>
+    <string name="challenges_button">Challenges:</string>
+    <string name="friends_button">Friends: </string>
+    <string name="points_number_text">13</string>
+    <string name="friends_number_text">3</string>
+    <string name="challenges_number_text">5</string>
 </resources>
