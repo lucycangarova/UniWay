@@ -12,50 +12,34 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MenuScreen extends AppCompatActivity {
+public class GroupScreen extends AppCompatActivity {
+
 
     //Defining android ListView
     ListView mListView;
 
     //Elements that will be displayed in android ListView
-    String[] menuOptions = new String[]{"Challenges", "Tour Mode", "Friends",
-            "Groups", "Profile", "Settings"};
+    String[] menuOptions = new String[]{"Group One ", "Group Two", "Group Three"};
 
     //Ids of flag Images that are placed in res> drawable folder. They return the int value
-    final int[] images = new int[]{R.drawable.challenges_icon, R.drawable.tour_icon,
-            R.drawable.friend_icon,R.drawable.group_icon,
-            R.drawable.profile_icon, R.drawable.settings_icon};
-
-    Class[] classes = new Class[]{MainActivity.class, MainActivity.class, MainActivity.class,
-            GroupScreen.class, ProfileScreen.class, MainActivity.class};
+    final int[] images = new int[]{R.drawable.group_settings, R.drawable.group_settings,
+            R.drawable.group_settings};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_screen);
+        setContentView(R.layout.activity_group_screen);
 
-        mListView = (ListView) findViewById(R.id.menu_list_view);
+        mListView = (ListView) findViewById(R.id.group_view_list);
 
         //Declaring Array adapter
-        CustomAdapter customAdapter = new CustomAdapter();
+        GroupScreen.CustomAdapter customAdapter = new GroupScreen.CustomAdapter();
         //Setting the android ListView's adapter to the newly created adapter
         mListView.setAdapter(customAdapter);
 
-
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //In order to start displaying new activity we need an intent
-                Intent intent = new Intent(getApplicationContext(), classes[position]);
-
-                //Here we will pass the previously created intent as parameter
-                startActivity(intent);
-
-            }
-        });
     }
 
-    class CustomAdapter extends BaseAdapter{
+    class CustomAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {

@@ -16,4 +16,9 @@
     <string name="points_number_text">13</string>
     <string name="friends_number_text">3</string>
     <string name="challenges_number_text">5</string>
+    <string name="group_label">Groups</string>
+    <string name="my_groups">My Groups: </string>
+    <string name="join_button">Join</string>
+    <string name="create_button">Create</string>
+    <string name="edit_field_groups">Name of a group</string>
 </resources>
