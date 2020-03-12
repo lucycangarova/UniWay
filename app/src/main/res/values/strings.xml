@@ -22,4 +22,6 @@
     <string name="create_button">Create</string>
     <string name="edit_field_groups">Name of a group</string>
     <string name="settings_label">Settings</string>
+<!--   Friends List -->
+    <string name="friends_header">Your Friends List</string>
 </resources>

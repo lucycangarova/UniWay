@@ -26,7 +26,7 @@ public class MenuScreen extends AppCompatActivity {
             R.drawable.friend_icon,R.drawable.group_icon,
             R.drawable.profile_icon, R.drawable.settings_icon};
 
-    Class[] classes = new Class[]{MainActivity.class, MainActivity.class, MainActivity.class,
+    Class[] classes = new Class[]{MainActivity.class, MainActivity.class,  FriendsScreen.class,
             GroupScreen.class, ProfileScreen.class, SettingsScreen.class};
 
     @Override
@@ -34,7 +34,7 @@ public class MenuScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_screen);
 
-        mListView = (ListView) findViewById(R.id.menu_list_view);
+        mListView = (ListView) findViewById(R.id.friend_list_view);
 
         //Declaring Array adapter
         CustomAdapter customAdapter = new CustomAdapter();
