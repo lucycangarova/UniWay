@@ -22,6 +22,7 @@
     <string name="create_button">Create</string>
     <string name="edit_field_groups">Name of a group</string>
     <string name="settings_label">Settings</string>
+    <string name="friends_header">Your Friends List</string>
     <string name="tour_mode_label">Tour Mode</string>
     <string name="ar_button">Go to AR view</string>
     <string name="challenge_button">Challenge 1</string>

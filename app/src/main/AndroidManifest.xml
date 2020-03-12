@@ -18,7 +18,9 @@
         <activity android:name=".GroupScreen" />
         <activity android:name=".ProfileScreen" />
         <activity android:name=".MenuScreen" />
+        <activity android:name=".FriendsScreen"/>
         <activity android:name=".MainActivity">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -1,39 +1,38 @@
 package com.example.uniway;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class MenuScreen extends AppCompatActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+
+public class FriendsScreen extends AppCompatActivity  {
+
 
     //Defining android ListView
     ListView mListView;
 
     //Elements that will be displayed in android ListView
-    String[] menuOptions = new String[]{"Challenges", "Tour Mode", "Friends",
-            "Groups", "Profile", "Settings"};
+    String[] friendNames = new String[]{"Jacob", "Mary", "Allison",
+            "Jenny", "Jarrod", "Karen"};
 
-    //Ids of flag Images that are placed in res> drawable folder. They return the int value
-    final int[] images = new int[]{R.drawable.challenges_icon, R.drawable.tour_icon,
-            R.drawable.friend_icon,R.drawable.group_icon,
-            R.drawable.profile_icon, R.drawable.settings_icon};
+    String[] friendScores = new String[]{"23", "18", "27",
+            "14", "11", "0"};
 
-
-    Class[] classes = new Class[]{ChallengesScreen.class, TourModeScreen.class, FriendsScreen.class,
-            GroupScreen.class, ProfileScreen.class, SettingsScreen.class};
+    final int[] images = new int[]{R.drawable.profile_icon, R.drawable.profile_icon,
+            R.drawable.profile_icon,R.drawable.profile_icon,
+            R.drawable.profile_icon, R.drawable.profile_icon
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menu_screen);
+        setContentView(R.layout.activity_friends_screen);
 
         mListView = (ListView) findViewById(R.id.friend_list_view);
 
@@ -41,22 +40,10 @@ public class MenuScreen extends AppCompatActivity {
         CustomAdapter customAdapter = new CustomAdapter();
         //Setting the android ListView's adapter to the newly created adapter
         mListView.setAdapter(customAdapter);
-
-
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                //In order to start displaying new activity we need an intent
-                Intent intent = new Intent(getApplicationContext(), classes[position]);
-
-                //Here we will pass the previously created intent as parameter
-                startActivity(intent);
-
-            }
-        });
     }
 
-    class CustomAdapter extends BaseAdapter{
+
+    class CustomAdapter extends BaseAdapter {
 
         @Override
         public int getCount() {
@@ -80,9 +67,10 @@ public class MenuScreen extends AppCompatActivity {
             TextView mTextView = view.findViewById(R.id.textView3);
 
             mImageView.setImageResource(images[position]);
-            mTextView.setText(menuOptions[position]);
+            mTextView.setText(friendNames[position]+" "+friendScores[position]+" points!");
 
             return view;
         }
     }
+
 }
