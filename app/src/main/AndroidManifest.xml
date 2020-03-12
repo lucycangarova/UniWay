@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PhotoViewScreen"></activity>
+        <activity android:name=".ChallengesScreen"></activity>
+        <activity android:name=".Challenge1Screen" />
+        <activity android:name=".PhotoViewScreen" />
         <activity android:name=".ARViewScreen" />
         <activity android:name=".TourModeScreen" />
         <activity android:name=".SettingsScreen" />

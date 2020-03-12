@@ -39,6 +39,11 @@ public class GroupScreen extends AppCompatActivity {
 
     }
 
+    public void startBack(View view){
+        Intent intent = new Intent(this, MenuScreen.class);
+        startActivity(intent);
+    }
+
     class CustomAdapter extends BaseAdapter {
 
         @Override

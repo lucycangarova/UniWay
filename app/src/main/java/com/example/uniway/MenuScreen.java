@@ -26,7 +26,7 @@ public class MenuScreen extends AppCompatActivity {
             R.drawable.friend_icon,R.drawable.group_icon,
             R.drawable.profile_icon, R.drawable.settings_icon};
 
-    Class[] classes = new Class[]{MainActivity.class, TourModeScreen.class, MainActivity.class,
+    Class[] classes = new Class[]{ChallengesScreen.class, TourModeScreen.class, MainActivity.class,
             GroupScreen.class, ProfileScreen.class, SettingsScreen.class};
 
     @Override

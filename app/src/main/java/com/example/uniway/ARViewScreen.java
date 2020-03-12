@@ -37,4 +37,9 @@ public class ARViewScreen extends AppCompatActivity {
         Intent intent = new Intent(this, PhotoViewScreen.class);
         startActivity(intent);
     }
+
+    public void startBack(View view){
+        Intent intent = new Intent(this, TourModeScreen.class);
+        startActivity(intent);
+    }
 }
