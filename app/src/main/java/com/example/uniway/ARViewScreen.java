@@ -2,6 +2,7 @@ package com.example.uniway;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Bundle;
@@ -33,6 +34,7 @@ public class ARViewScreen extends AppCompatActivity {
     }
 
     public void clickOnVideo(View v) {
-
+        Intent intent = new Intent(this, PhotoViewScreen.class);
+        startActivity(intent);
     }
 }
