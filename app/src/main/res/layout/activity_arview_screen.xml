@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".ARViewScreen">
 
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:onClick="startBack"
+        android:text="@string/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <VideoView
         android:id="@+id/videoView3"
         android:layout_width="fill_parent"

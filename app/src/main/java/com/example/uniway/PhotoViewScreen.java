@@ -15,7 +15,12 @@ public class PhotoViewScreen extends AppCompatActivity {
     }
 
     public void startChallengeView(View view){
-        Intent intent = new Intent(this, MenuScreen.class);
+        Intent intent = new Intent(this, Challenge1Screen.class);
+        startActivity(intent);
+    }
+
+    public void startBack(View view){
+        Intent intent = new Intent(this, TourModeScreen.class);
         startActivity(intent);
     }
 }

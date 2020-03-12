@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".PhotoViewScreen">
 
+    <Button
+        android:id="@+id/button13"
+        android:layout_width="71dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:onClick="startBack"
+        android:text="@string/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="407dp"
