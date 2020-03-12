@@ -22,6 +22,16 @@
     <string name="create_button">Create</string>
     <string name="edit_field_groups">Name of a group</string>
     <string name="settings_label">Settings</string>
-<!--   Friends List -->
     <string name="friends_header">Your Friends List</string>
+    <string name="tour_mode_label">Tour Mode</string>
+    <string name="ar_button">Go to AR view</string>
+    <string name="challenge_button">Challenge 1</string>
+    <string name="challenge1_label">Challenge 1</string>
+    <string name="challenge_description">Find Glasgow University Union. Enter the Union and go to
+        the reception. Get yourself free membership card. Take picture of the card.</string>
+    <string name="points_to_gain">Points to gain for the challenge:</string>
+    <string name="submission">Enter the submission:</string>
+    <string name="submit_button">Submit</string>
+    <string name="back_button">Back</string>
+    <string name="challenges_label">Challenges</string>
 </resources>
