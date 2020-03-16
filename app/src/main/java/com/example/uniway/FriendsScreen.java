@@ -24,9 +24,9 @@ public class FriendsScreen extends AppCompatActivity  {
     String[] friendScores = new String[]{"23", "18", "27",
             "14", "11", "0"};
 
-    final int[] images = new int[]{R.drawable.profile_icon, R.drawable.profile_icon,
-            R.drawable.profile_icon,R.drawable.profile_icon,
-            R.drawable.profile_icon, R.drawable.profile_icon
+    final int[] images = new int[]{R.drawable.friends_setting_icon, R.drawable.friends_setting_icon,
+            R.drawable.friends_setting_icon,R.drawable.friends_setting_icon,
+            R.drawable.friends_setting_icon, R.drawable.friends_setting_icon
     };
 
     @Override
@@ -62,9 +62,9 @@ public class FriendsScreen extends AppCompatActivity  {
 
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            View view = getLayoutInflater().inflate(R.layout.custom_list_view, null);
-            ImageView mImageView = (ImageView) view.findViewById(R.id.imageView3);
-            TextView mTextView = view.findViewById(R.id.textView3);
+            View view = getLayoutInflater().inflate(R.layout.friends_custom_list, null);
+            ImageView mImageView = (ImageView) view.findViewById(R.id.imageView13);
+            TextView mTextView = view.findViewById(R.id.textView13);
 
             mImageView.setImageResource(images[position]);
             mTextView.setText(friendNames[position]+" "+friendScores[position]+" points!");
