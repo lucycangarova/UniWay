@@ -15,6 +15,7 @@
         android:layout_marginTop="32dp"
         android:onClick="startBack"
         android:text="@string/back_button"
+        android:background="#00000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,6 +31,8 @@
         android:gravity="center"
         android:text="@string/settings_label"
         android:textSize="30sp"
+        android:background="@drawable/rounded_button_yellow"
+        android:textColor="#000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button16"
         app:layout_constraintTop_toTopOf="parent" />
