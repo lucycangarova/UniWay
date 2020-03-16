@@ -13,6 +13,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button_blue"
+        android:textColor="#ffe699"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
@@ -33,22 +35,25 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:autoText="false"
+        android:background="@drawable/rounded_edittext"
         android:hint="@string/submission"
         android:inputType="textUri"
         android:text="@string/submission"
         app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="46dp"
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
+        android:background="@drawable/rounded_textview_yellow"
         android:gravity="center|center_horizontal|center_vertical"
         android:text="@string/points_number_text"
         android:textColor="#000000"
@@ -67,6 +72,7 @@
         android:clickable="false"
         android:text="@string/points_to_gain"
         android:textSize="18sp"
+        android:background="@drawable/rounded_button_yellow"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -81,7 +87,7 @@
         android:layout_marginRight="16dp"
         android:text="@string/challenge_description"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/username_label7" />
@@ -98,6 +104,8 @@
         android:gravity="center"
         android:text="@string/challenge1_label"
         android:textSize="30sp"
+        android:background="@drawable/rounded_button_yellow"
+        android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button10"
         app:layout_constraintTop_toTopOf="parent" />
@@ -126,6 +134,7 @@
         android:layout_marginTop="32dp"
         android:onClick="startBack"
         android:text="@string/back_button"
+        android:background="#00000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

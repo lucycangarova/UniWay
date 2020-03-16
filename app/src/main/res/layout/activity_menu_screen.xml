@@ -17,6 +17,8 @@
         android:layout_marginRight="16dp"
         android:gravity="center"
         android:text="@string/username_label"
+        android:textColor="#000"
+        android:background="@drawable/rounded_button_yellow"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
